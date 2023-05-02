@@ -2,10 +2,27 @@
 <html lang="en" class="h-100">
    <head>
       <title>Tableau de bord Promotion 2023</title>
+      <meta name = DC.title* content=" CIFAMN : Tableau de bordpromotion 2023” "/>
+      <meta name=DC.description * content=" Effectif des apprenants par secteur d’activité, Pays, évaluation communication et cours” "/>
+      <meta name=DC.subject* content=" Données des apprenants et enseignants par Pays, fonction genre et par âge ” "/>
+      <meta name=DC.creator* content="Groupe Web ” "/>
+      <meta name=DC.contributor* content= "BODO Gérard ” "/>
+      <meta name=DC.contributor* content="Laurianne RANDRIATIANA“ "/> 
+      <meta name=DC.contributor* content="Débora HOUENOU” "/> 
+      <meta name=DC.contributor* content="ESSOUM Martin” "/> 
+      <meta name=DC.contributor* content="T.Hyacinthe” "/>
+      <meta name=DC.modified* content="2023-05-01 ” "/>
+      <meta name=DC.date accepted* content="2023-04-30 ” "/>
+      <meta name="DC.format* content=*text/HTML“ "/>  
+      <meta name=DC.identified * content=" https://tiakorhanitra.github.io/cifamn2023.github.io " />
+      <meta name=DC.rights* content=" ” "/>
+      <meta name=DC.accessRights* content="Public  ” "/>
+      <meta name="language* content="Français *>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!--Meta indexation DC, JLD, Open Graph, Twitter Cards -->
       <!--Fin indexation -->
+      <script type="text/javascript"></script>
       <!--chargemenr AJAX API-->
       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
       <!--Chargement tableau de bord 1-->
@@ -20,6 +37,12 @@
       <!--Chargement tableau de bord 4-->
       <script type="text/javascript" src="JS/dashboard4.js"></script>
       <!--Fin du chargement tableau de bord4 -->
+      <!--Chargement tableau de bord 5-->
+      <script type="text/javascript" src="JS/dashboard5.js"></script>
+      <!--Fin du chargement tableau de bord5 -->
+      <!--Chargement tableau de bord 6-->
+      <script type="text/javascript" src="JS/dashboard6.js"></script>
+      <!--Fin du chargement tableau de bord6 -->
       <!--Fin du chargement AJAX API-->
       <!-- Chargement Bootstrap V5.3 -->
       <link rel="stylesheet" href="CSS/bootstrap.min.css">
@@ -28,131 +51,108 @@
    </head>
    <body class="d-flex flex-column h-100">
       <div class="container-fluid">
-      <div class="row">
-      <!-- Menu -->
-      <div class="col-sm-2 align-items-center">
-         <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
-            <nav class="nav nav-pills flex-column">
-            <!--LOGO--> 
-            <a class="navbar-brand my-5"  href="#">
-            <img src="http://cifamn.com/wp-content/uploads/2022/12/logocifamn.jpg" alt="Logo" class="site_logo">
-            </a>
-            <!--Fin de LOGO--> 
-            <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Dasboard
-               </a>
-               <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#enseignant">Enseignants</a></li>
-                  <li><a class="dropdown-item" href="#etudiant">Etudiants</a></li>
-               </ul>
-               </li>
-            <a class="nav-link" href="#item-4">Chart</a>
-            <a class="nav-link" href="#item-5">Rapport</a>
-            </nav>
-         </nav>
-      </div>
       <!--Fin du Menu -->
       <!-- Une section de contenu -->
-      <div class="col-sm-10">
       <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
       <!-- Une section de contenu pour un grand titre -->
-      <div class="p-4 bg-dark-subtle text-center">
-         <h1 class="h1">Data Visualisation </h1>
-         <p class="h6 text-muted"> Une description p</p>
+      <div class="p-4 shadow"> 
+      <div class="row">
+     <div class="col-sm-4">
+            <img src="http://cifamn.com/wp-content/uploads/2022/12/logocifamn.jpg" alt="Logo" class="site_logo">
       </div>
+          <div class="col-sm-8">
+            <h1 class="h1">Data Visualisation </h1>
+         <p class="h6 text-muted"> Representation graphique des activités du CIFAMN en 2023</p>
+      </div>
+       </div>
+         
+      </div>
+      
       <!-- Fin du section de contenu pour un grand titre -->
-      <div id="item-1">
+      </div>
       <div class="container-fluid">
       <div class="row p-3">
       <!-- Premier item 1 -->
-         <div class="col-lg-5 " id="enseignant" >
-         <div class="  p-3 mb-2">
-         <div class="card-header bg-transparent">
-            <h5 class="card-title text-center">Effectifs des étudiants en fonction de leur secteur d'activité</h5>
-         </div>
-         <div class="card-body">
-            <div id="dashboard_div">
-               <!--Divs that will hold each control and chart-->
-               <div id="filter_div"></div>
-               <div id="chart_div"></div>
-            </div>
-         </div>
-         </div>
-         </div>
-         <!-- Deuxième item 2 -->
-         <div class="col-lg-7">
-         <div class=" shadow p-4 mb-2 bg-body-tertiary">
-            <table class="table text-center">
-               <thead>
-               <tr class="table-secondary">
-                  <th scope="col">Enseignant</th>
-                  <th scope="col">Secteur</th>
-               </tr>
-               </thead>
-               <tbody>
-               <tr>
-                  <td>To be update...</td>
-                  <td>Analyse des données et ingénierie de la décision</td>
-               </tr>
-               <tr>
-                  <td>To be update...</td>
-                  <td>Communication digitale expertise web réseaux sociaux <br> Gestion électronique des documents, <br> Dématérialisation des archives</td>
-               </tr>
-               <tr>
-                  <td>To be update...</td>
-                  <td>Stratégie digitale et management des entreprises</td>
-               </tr>
-               <tr>
-                  <td>To be update...</td>
-                  <td>Gestions des projets numériques</td>
-               </tr>
-               </tbody>
-            </table>
-         </div>
-         </div>
-       <!-- Deuxième item 3 -->
-       <div id="etudiant">
-         <div class="col-lg-12 p-5">
-         <div class="card shadow p-3 mb-2 bg-body-tertiary">
-         <div class="card-header bg-transparent">
-            <h5 class="card-title text-center">Effetifs des étudiants selon leurs pays</h5>
-            <p class="card-subtitle text-muted"></p>
-         </div>
-         <div class="card-body">
+      <div class="col-sm-6">
+      <div class="card-header bg-transparent" id ="graphe" >
+         <h5 class="card-title text-center " id="enseignant">Effectif des étudiants en fonction de leur secteur d’activité</h5>
+      </div>
+      <div class="card-body ">
+            <!--Divs that will hold each control and chart-->
+            <div id="chart1"></div>
+          </div>
+      </div>
+      <!-- Deuxième item 2 -->
+      <div class="col-sm-6 align-self-center">
+      <div class="card-header bg-transparent" >
+              <div class="card-header bg-transparent">
+         <h5 class="card-title text-center" id="enseignant">Effectif des étudiants CIFAMN Promotion2023 selon leur genre</h5>
+      </div>
+      <div class="card-body p-4">
+            <!--Divs that will hold each control and chart-->
+            <div id="chart2"></div>
+           <div class="align-self-center">
+            <button type="button" id="b1" class="btn btn-secondary"  >Cliquez-ici pour consulter l'effectifs(Hommes/Femmes)</button>
+          </div>   
+          </div>       
+          </div>
+       </div>
+      </div>
 
-               <div id="chart3_div"></div>
+       <!-- Deuxième item 3 -->
+       <div class="col-lg-12 p-5">
+       <div class="card shadow mb-2 bg-body-tertiary">
+       <div class="card-header bg-transparent">
+         <h3 class="card-title text-center" >Effectif des étudiants en fonction de leur pays </h3>
+       </div>
+       <div class="card-body" id="etudiants">
+            <div id="chart3"></div>
+          </div>
+       </div>
+       </div>
+       </div>
+       <!--item4-->
+       <div class="col-lg-12  p-5" id="Sondage">
+      <div class="card-header bg-transparent">
+         <h5 class="card-title text-center" id="enseignant">Evaluation sur la communication</h5>
+      </div>
+      <div class="card-body p-4">
+            <!--Divs that will hold each control and chart-->
+            <div id="chart4"></div>
+          </div>
+      </div>
+       <!-- item 5-->
+       <div class="row">
+         <div class="col-lg-6">
+            <div class="card shadow p-3 mb-2 bg-body-tertiary">
+            <div class="card-header bg-transparent">
+              <h5 class="card-title text-center">Evaluation sur l'organisation des cours donnés par le CIFAMN</h5>
             </div>
-         </div>
-         </div>
-         </div>
-         <!-- Deuxième item 4 -->
-        <div class="col-lg-6">
-         <div class="card shadow p-3 mb-2 bg-body-tertiary">
-         <div class="card-header bg-transparent">
-            <h5 class="card-title">DASHBORD4</h5>
-            <p class="card-subtitle text-muted">Description</p>
-         </div>
-         <div class="card-body">
-            <div id="dashboard4_div"> 
-               <!--Divs that will hold each control and chart-->
-               <div id="filter4_div"></div>
-               <div id="chart4_div"></div>
-         </div>
-         </div>
-         </div>
-         </div>
-         </div>
-         </div>
+            <div class="card-body">
+                 <!--Divs that will hold each control and chart-->
+                 <div id="chart5"></div>
+             </div>
+             </div>
+         </div>            
+       <div class="col-lg-6">
+       <div class="card shadow p-3 mb-2 bg-body-tertiary">
+       <div class="card-header bg-transparent">
+         <h5 class="card-title text-center">Evaluation sur la qualité des cours dispensé par les enseignants</h5>
+            </div></h5>
+       <div class="card-body">
+            <!--Divs that will hold each control and chart-->
+            <div id="chart6"></div>
+        </div>
+        </div>
+        </div>
+        </div>
       </div>
-       <div id="item-4">
-        <h4>CHART</h4>
-         <p>...</p>
       </div>
-       <div id="item-5">
-        <h4>RAPPORT</h4>
-         <p>...</p>
       </div>
+      <!-- <div id="commentaire">
+        <h4>Commentaire</h4>
+         <p>To be update...</p>
+      </div>-->
       </div>
       </div>
       </div> 
