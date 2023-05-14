@@ -8,7 +8,7 @@ function drawStuff() {
     'controlType': 'NumberRangeFilter',
     'containerId': 'First_control_div',
     'options': {
-      'filterColumnLabel': 'Nombre d\'étudiants',
+      'filterColumnLabel': 'Etudiants',
     }
   });
 
@@ -17,11 +17,11 @@ function drawStuff() {
     'containerId': 'First_chart_div',
      options: { 
         'legend': 'none',
-        hAxis: {title: 'Nombre d\'étudiants'},
+        hAxis: {title: 'Etudiants'},
     },
   });
 var data = google.visualization.arrayToDataTable([
-["Modules", "Nombre d'étudiants"],
+["Modules", "Etudiants"],
 ["Gouvernance de l'information en organisation gestion électronique des documents dématérialisation des archives", 15],
 ["Analyse des données et ingénierie de la décision", 6,],
 ["Stratégie digitale et management des entreprises", 3],
