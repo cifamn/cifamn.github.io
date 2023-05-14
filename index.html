@@ -1,179 +1,171 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
-   <head>
-      <title>Tableau de bord Promotion 2023</title>
-      <meta name = DC.title* content=" CIFAMN : Tableau de bord promotion 2023” "/>
-      <meta name=DC.description * content=" Effectif des apprenants par secteur d’activité, Pays, évaluation communication et cours” "/>
-      <meta name=DC.subject* content=" Données des apprenants et enseignants par Pays, fonction genre et par âge ” "/>
-      <meta name=DC.creator* content="Groupe Web ” "/>
-      <meta name=DC.contributor* content= "BODO Gérard ” "/>
-      <meta name=DC.contributor* content="Laurianne RANDRIATIANA“ "/> 
-      <meta name=DC.contributor* content="Débora HOUENOU” "/> 
-      <meta name=DC.contributor* content="ESSOUM Martin” "/> 
-      <meta name=DC.contributor* content="T.Hyacinthe” "/>
-      <meta name=DC.modified* content="2023-05-01 ” "/>
-      <meta name=DC.date accepted* content="2023-04-30 ” "/>
-      <meta name="DC.format* content=*text/HTML“ "/>  
-      <meta name=DC.identified * content=" https://cifamn.github.io/" />
-      <meta name=DC.rights* content=" ” "/>
-      <meta name=DC.accessRights* content="Public  ” "/>
-      <meta name="language* content="Français *>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!--Meta indexation DC, JLD, Open Graph, Twitter Cards -->
-      <!--Fin indexation -->
-      <script type="text/javascript"></script>
-       <!--Chargement font awesome-->
-      <script src="https://kit.fontawesome.com/a9c4ba53a8.js"></script>
-      <!--Fin de chargement font awesome-->
-      <!--chargemenr AJAX API-->
-      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-      <!--Chargement tableau de bord 1-->
-      <script type="text/javascript" src="JS/dashboard1.js"></script>
-      <!--Fin du chargement tableau de bord 1-->
-      <!--Chargement tableau de bord 2-->
-      <script type="text/javascript" src="JS/dashboard2.js"></script>
-      <!--Fin du chargement tableau de bord 2-->
-      <!--Chargement tableau de bord 3-->
-      <script type="text/javascript" src="JS/dashboard3.js"></script>
-      <!--Fin du chargement tableau de bord 3-->
-      <!--Chargement tableau de bord 4-->
-      <script type="text/javascript" src="JS/dashboard4.js"></script>
-      <!--Fin du chargement tableau de bord4 -->
-      <!--Chargement tableau de bord 5-->
-      <script type="text/javascript" src="JS/dashboard5.js"></script>
-      <!--Fin du chargement tableau de bord5 -->
-      <!--Chargement tableau de bord 6-->
-      <script type="text/javascript" src="JS/dashboard6.js"></script>
-      <!--Fin du chargement tableau de bord6 -->
-      <!--Fin du chargement AJAX API-->
-      <!-- Chargement Bootstrap V5.3 -->
-      <link rel="stylesheet" href="CSS/bootstrap.min.css">
-      <script src="JS/bootstrap.bundle.js"></script>
-      <!-- Fin du chargement Bootstrap V5.3 -->
-   </head>
-   <body class="d-flex flex-column h-100">
-      <div class="container-fluid">
-      <!--Fin du Menu -->
-      <!-- Une section de contenu -->
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
-      <!-- Une section de contenu pour un grand titre -->
-      <div class="p-4 shadow"> 
-      <div class="row">
-     <div class="col-sm-3">
-            <img src="http://cifamn.com/wp-content/uploads/2022/12/logocifamn.jpg" alt="Logo" class="site_logo">
+<html lang="en">
+  <head>
+    <title>CIFAMN Dashboard Promo 2023 </title>
+    <meta charset="UTF-8">
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name ="dc.title" content = "CIFAMN Dashboard Promo 2023">
+    <meta name ="dc.description" content=" Effectif des apprenants par secteur d'activité, Pays, évaluation communication et cours">
+    <meta name ="dc.subject" content="Filières">
+    <meta name ="dc.subject" content="Genres">
+    <meta name ="dc.subject" content="Pays">
+    <meta name ="dc.subject" content="E-réputation">
+    <meta name ="dc.creator" content="Groupe Web">
+    <meta name="dc.contributor" content="Laurianne RANDRIATIANA">
+    <meta name="dc.contributor" content="Débora HOUENOU">
+    <meta name="dc.contributor" content="Martin ESSOUMBI">
+    <meta name="dc.contributor" content="T.Hyacinthe">
+    <meta name="dc.contributor" content="Gérard BODO">
+    <meta name="dc.date" content="2023-04-30">
+    <meta name="dc.format" content="text/html">
+    <meta name=dc.identified * content="www.cifamn.github.io">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Meta indexation DC, JLD, Open Graph, Twitter Cards -->
+    <!--Fin indexation -->
+    <!-- Chargement Bootstrap V5.3 -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script src="JS/bootstrap.bundle.js"></script>
+    <!-- Fin du chargement Bootstrap V5.3 -->
+    <!--Chargement Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Fin du chargement Google Charts -->
+    <!-- Chargement du tableau de bord n°1 -->
+    <script type="text/javascript" src="JS/dashboard1.js"></script>
+    <!-- Fin du chargement du tableau de bord n°1  -->
+    <!-- Chargement du tableau de bord n°2 -->
+    <script type="text/javascript" src="JS/dashboard2.js"></script>
+    <!-- Fin du chargement du tableau de bord n°2  -->
+    <!-- Chargement du tableau de bord n°3 -->
+    <script type="text/javascript" src="JS/dashboard3.js"></script>
+    <!-- Fin du chargement du tableau de bord n°3  -->
+    <!-- Chargement du tableau de bord n°4 -->
+    <script type="text/javascript" src="JS/dashboard4.js"></script>
+    <!-- Fin du chargement du tableau de bord n°4 -->
+    <!-- Chargement du tableau de bord n°5 -->
+    <script type="text/javascript" src="JS/dashboard5.js"></script>
+    <!-- Fin du chargement du tableau de bord n°5 -->
+    <script type='application/ld+json'>
+      {
+        "@context": "http://www.schema.org",
+        "@type": "EducationalOrganization",
+        "name": "CIFAMN",
+        "logo": "http://cifamn.com/wp-content/uploads/2022/12/logocifamn.jpg",
+        "description": "Dans le but de mettre en pratique les connaissances, acquises lors des séances de notre module de cours : Numérisation, gestion des données, big data. Nous réalisons une étude visant à visualiser et apprécier les activités du CIFAMN en 2023.",
+        "address": {
+           "@type": "PostalAddress",
+           "addressCountry": "Cameroon"
+        }
+      }
+    </script>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg p-3 bg-light navbar-light">
+      <a class="navbar-brand" href=""><img src="http://cifamn.com/wp-content/uploads/2022/12/logocifamn.jpg" alt="LOGO CIFAMN" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">ACCUEIL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#filieres">FILIERES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#genres">GENRES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pays">PAYS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ereputation">E-REPUTATION</a>
+          </li>
+        </ul>
       </div>
-          <div class="col-sm-5 align-self-start">
-            <h1 class="h1 text-center">Data Visualisation </h1>
-            <p class="h6 text-muted text-center "> Representation graphique sur l'effectifs des apprenants par secteur d’activité, Pays, évaluation communication et cours </p>
-          </div>
-          <div class="col-sm-4 ">
-          <div class="row justify-content-center p-4" id="contact">
-            <div class="col-sm-3 ">
-             <a class="nav-link fab fa-facebook fa-2x text-center " style="color: rgb(102, 4, 4);"  id="contact" title="to be update"  href="#"></a>
-            </div>
-            <div class="col-sm-3 ">
-              <h6 class="nav-link fas fa-envelope fa-2x text-center " style="color: rgb(102, 4, 4);"  id="contact" title="to be update" href="#contact"></h6>
-            </div>
-          </div>
-          </div>
-       </div>      
-      </div>    
-      <!-- Fin du section de contenu pour un grand titre -->
-      </div>
-      <div class="container-fluid">
-      <div class="row p-5">
-      <!-- Premier item 1 -->
-      <div class="col-sm-6">
-      <div class="card-header bg-transparent" id ="graphe" >
-         <h5 class="card-title text-center " id="enseignant">Effectifs des étudiants en fonction de leur secteur d’activité</h5>
-      </div>
-      <div class="card-body p-5 ">
-            <!--Divs that will hold each control and chart-->
-            <div id="chart1"></div>
-          </div>
-      </div>
-      <!-- Deuxième item 2 -->
-      <div class="col-sm-6 align-self-center">
-      <div class="card-header bg-transparent" >
-              <div class="card-header bg-transparent">
-         <h5 class="card-title text-center" id="enseignant">Effectifs des étudiants CIFAMN Promotion2023 selon leur genre</h5>
-      </div>
-      <div class="card-body p-4">
-            <!--Divs that will hold each control and chart-->
-            <div id="chart2"></div>
-          <div class="row justify-items-center">
-            <button type="button" id="b1" class="btn btn-secondary mx-3"> Cliquez-ici pour consulter l'effectifs <br> (Hommes/Femmes)</button>
-             </div>
-          </div>       
-          </div>
-       </div>
-      </div>
-       <!-- Deuxième item 3 -->
-       <div class="col-lg-12 p-2">
-       <div class="card shadow mb-2 bg-body-tertiary" style="height:50%;">
-       <div class="card-header bg-transparent">
-         <h3 class="card-title text-center" >Effectifs des étudiants en fonction de leur pays </h3>
-       </div>
-       <div class="card-body" id="etudiants">
-            <div id="chart3"></div>
-          </div>
-       </div>
-       </div>
-       </div>
-       <!--item4-->
-       <div class="col-lg-12  p-5" id="Sondage">
-      <div class="card-header bg-transparent">
-         <h5 class="card-title text-center" id="enseignant">Evaluation sur la communication</h5>
-      </div>
-      <div class="card-body p-4">
-            <!--Divs that will hold each control and chart-->
-            <div id="chart4"></div>
-          </div>
-      </div>
-       <!-- item 5-->
-       <div class="row">
-         <div class="col-lg-6">
-            <div class="card shadow p-3 mb-2 bg-body-tertiary">
+    </nav>
+    <!-- Fin du Menu -->
+    <!-- Une section de contenu -->
+    <div class="p-5 bg-info text-center">
+      <h1 class="h1 text-danger">Data Visualisation</h1>
+      <p class="h6 text-muted">Dans le but de mettre en pratique les connaissances, acquises lors des séances de notre module de cours : Numérisation, gestion des données, big data. Nous réalisons une étude visant à visualiser et apprécier les activités du CIFAMN en 2023. </p>
+    </div>
+    <!-- Une section de contenu -->
+    <div class="container-fluid">
+      <div class="row p-3">
+        <!-- Premier item 1 -->
+        <div class="col-lg-6">
+          <div class="card shadow p-3 mb-2 bg-body-tertiary">
             <div class="card-header bg-transparent">
-              <h5 class="card-title text-center">Evaluation sur l'organisation des cours donnés par le CIFAMN</h5>
+              <h5 class="card-title" id="filieres">Filières</h5>
+              <p class="card-subtitle text-muted">Une représentation graphique des différentes filières ainsi que l’effectif d’étudiants qui sont inscrits.</p>
             </div>
             <div class="card-body">
-                 <!--Divs that will hold each control and chart-->
-                 <div id="chart5"></div>
-             </div>
-             </div>
-         </div>            
-       <div class="col-lg-6">
-       <div class="card shadow p-3 mb-2 bg-body-tertiary">
-       <div class="card-header bg-transparent">
-         <h5 class="card-title text-center">Evaluation sur la qualité des cours dispensé par les enseignants</h5>
-            </div></h5>
-       <div class="card-body">
-            <!--Divs that will hold each control and chart-->
-            <div id="chart6"></div>
+              <!-- Buttons de Contrôle Dashboard n°1 -->
+              <div id="First_dashboard_div">
+                <div id="First_control_div" class="h6 text-primary"></div>
+                <div id="First_chart_div"></div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Deuxième item 2 -->
+        <div class="col-lg-6">
+          <div class="card shadow p-3 mb-2 bg-body-tertiary">
+            <div class="card-header bg-transparent">
+              <h5 class="card-title" id="genres">Genres</h5>
+              <p class="card-subtitle text-muted">Une représentation graphique des différents genres en présence. L’Effectif d’étudiant(e)s des deux sexes.</p>
+            </div>
+            <div class="card-body">
+              <!-- Votre graphe ici -->
+              <div id="Second_dashboard_div">
+                <div id="Second_control_div" class="h6 text-primary"></div>
+                <div id="Second_chart_div"></div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Deuxième item 3 -->
+        <div class="col-lg-6">
+          <div class="card shadow p-3 mb-2 bg-body-tertiary">
+            <div class="card-header bg-transparent">
+              <h5 class="card-title" id="pays">Pays</h5>
+              <p class="card-subtitle text-muted">Graphique sur la répartition géographique de l’ensemble des étudiants</p>
+            </div>
+            <div class="card-body">
+              <!-- Votre graphe ici -->
+              <div id="Third_dashboard_div">
+                <div id="Third_control_div" class="h6 text-primary"></div>
+                <div id="Third_chart_div"></div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Deuxième item 4 -->
+        <div class="col-lg-6">
+          <div class="card shadow p-3 mb-2 bg-body-tertiary">
+            <div class="card-header bg-transparent">
+              <h5 class="card-title" id="ereputation">E-réputation</h5>
+              <p class="card-subtitle text-muted">Graphique sur la communication tant traditionnelle que numérique</p>
+            </div>
+            <div class="card-body">
+              <!-- Votre graphe ici -->
+              <div id="Four_dashboard_div">
+                <div id="Four_control_div" class="h6 text-primary"></div>
+                <div id="Four_chart_div"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-      </div>
-      <!-- <div id="commentaire">
-        <h4>Commentaire</h4>
-         <p>To be update...</p>
-      </div>-->
-      </div>
-      </div>
-      </div> 
-   </div> 
-      <!-- Fin du Menu --> 
-      <!-- Pied de page -->
-      <div class="container-fluid bg-dark p-5 text-light">
-            <footer class="footer">
-               <p class="text-center">&copy;2023 CIFAMN</p>
-            </footer>
-      </div>
-      <!-- Pied de page -->
-   </body>
+    </div>
+    <!-- Pied de page -->
+    <div class="p-5 bg-danger">
+      <footer class="mt-auto text-light">
+        <p class="text-center">&copy; 2023 CIFAMN </p>
+      </footer>
+    </div>
+    <!-- Pied de page -->
+  </body>
 </html>
