@@ -1,28 +1,37 @@
-// Load the Visualization API and the controls package.
 google.charts.load('current', {'packages':['corechart', 'controls']});
-// Set a callback to run when the Google Visualization API is loaded.
-google.charts.setOnLoadCallback(drawDashboard4);
-// Callback that creates and populates a data table,
-// instantiates a dashboard, a range slider and a pie chart,
-// passes in the data and draws it..
-function drawDashboard4() {
-   // Create our data table.
-   var data4 = google.visualization.arrayToDataTable([
-          ['Communication', 'effectif'],
-          [ 'Site Web', 4],
-          ['Reseaux Sociaux', 20  ],
-          ['Entourage', 3 ],
-          ['Mail Personnalisé', 1 ],
-          [ 'Ecole Doctorale',1]
-        ]);
+google.charts.setOnLoadCallback(drawStuff);
+function drawStuff() {
 
-      var options = {
-        legend: 'none'
-      };
+  var dashboard = new google.visualization.Dashboard(
+    document.getElementById('Four_dashboard_div'));
+  var FourSlider = new google.visualization.ControlWrapper({
+    'controlType': 'NumberRangeFilter',
+    'containerId': 'Four_control_div',
+    'options': {
+      'filterColumnLabel': 'Scores',
+    }
+  });
 
-        var chart = new google.visualization.ColumnChart(document.getElementById('chart4'));
-        chart.draw(data4, options);
-   }
-
-
-   
+  var FourChart  = new google.visualization.ChartWrapper({
+    'chartType': 'LineChart',
+    'containerId': 'Four_chart_div',
+     options: { 
+        'legend': 'none',
+        hAxis: {title: 'Scores'},
+    },
+  });
+  var data = google.visualization.arrayToDataTable([
+              ['Canaux', 'Scores'],
+              ['Site Web', 4],
+              ['Réseaux Sociaux', 20],
+              ['Entourage', 3],
+              ['Mail', 1 ],
+              ['Ecole Doctorale',1]
+            ]);
+  dashboard.bind(FourSlider, FourChart);
+  dashboard.draw(data);
+  changeRange = function() {
+    FourSlider.setState({'lowValue': 1, 'highValue': 20});
+    FourSlider.draw();
+  };
+}
